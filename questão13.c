@@ -12,3 +12,22 @@
 */
 
 void truncW (char t[], int n){
+   int i,j=0,rep=n;
+   
+   for(i=0;t[i];i++)
+   {
+      if (t[i]==' ')
+      {
+         t[j]=' ';
+         j++;
+         rep=n;
+      }
+      else if (rep!=0)
+      {
+         t[j]=t[i];
+         j++;
+         rep--;
+      }
+   }
+   t[j]='\0';
+}
