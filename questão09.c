@@ -6,6 +6,7 @@
    • >0, se s1>s2.
 */
 int mystrcmp(char s1[], char s2[]) {
-    // adicione aqui o seu código
-    return 0;
+    int i;
+    for (i=0; s1[i]==s2[i] && s1[i];i++);
+    return (s1[i]-s2[i]);
 }
